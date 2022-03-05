@@ -1,0 +1,19 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.box {
+  border: 1px solid black;
+  display: flex;
+}
+.box > div {
+  border: 1px solid red;
+  width: 33%;
+  height: 150px;
+}
+
+@media screen and (max-width: 400px)  {
+  .box {
+    flex-direction: column-reverse;
+  }
+  .box > div {
+    width: 100%;
+  }
+}
